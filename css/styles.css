@@ -3,8 +3,9 @@
 .site{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px 50px 500px 150px 50px;
+  grid-template-rows: 30px 100px 50px 500px 150px 50px;
   grid-template-areas:
+    'tp tp tp tp tp'
     'nv nv nv nv nv'
     'hd hd hd hd hd'
     'side side main main main'
@@ -13,7 +14,12 @@
 }
 
 .icons{
+  margin: 5px;
+}
 
+.top{
+  grid-column: 1/6;
+  background-color: #2292eb;
 }
 
 .header{
@@ -25,6 +31,14 @@
   grid-column: 1/6;
   background: #0d3f6e;
   color: white;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-around;
+  padding: 5px;
 }
 
 .sidebar{
@@ -50,6 +64,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 100px 50px 200px 300px 150px 50px;
     grid-template-areas:
+      'tp'
       'nv'
       'hd'
       'main'
