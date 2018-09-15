@@ -93,7 +93,7 @@
 @media screen and (max-width:767px) {
   .site{
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 50px 200px 300px 150px 50px;
+    grid-template-rows: 20px 70px 200px 300px 150px 50px;
     grid-template-areas:
       'tp'
       'nv'
@@ -104,12 +104,46 @@
       'ft';
   }
   /* sidebar and main switch positions */
-   .sidebar {
+  .sidebar {
     grid-row: main;
   }
   .main {
     grid-column: side;
     grid-row: side;
+  }
+
+  .icons {
+    margin-top: 15px;
+}
+
+  .icon-dashboard {
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+
+  .icon-customers {
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+
+  .icon-messages {
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+
+  .icon-promotions {
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+
+  .icon-page-creator {
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+
+  .icon-analytics {
+    margin-left: 0px;
+    margin-right: 5px;
   }
 
 
