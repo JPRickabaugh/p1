@@ -3,7 +3,7 @@
 .site{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 30px 100px 80px 500px 150px 25px;
+  grid-template-rows: 30px 100px 80px 500px 150px 40px;
   grid-template-areas:
     'tp tp tp tp tp'
     'nv nv nv nv nv'
@@ -169,14 +169,105 @@
   width: 100%;
   border-top-color: white;
   border-top-style: solid;
+  border-top-width: thin;
 }
 
+#tutorials {
+  padding-right: 15px;
+  color: #999999;
+  margin-top: 9px;
+  font-size: 12px;
+}
+
+#support {
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #999999;
+  padding-top: 9px;
+  border-left-style: solid;
+  border-left-color: #999999;
+  border-left-width: thin;
+  margin-bottom: 0px;
+  height: 35px;
+  font-size: 12px;
+}
+
+#blog {
+  border-left-style: solid;
+  border-left-color: #999999;
+  border-left-width: thin;
+  margin-bottom: 0px;
+  height: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 15px;
+  color: #999999;
+  padding-top: 9px;
+  font-size: 12px;
+}
+
+#blog:hover, #support:hover, #tutorials:hover {
+  text-decoration: underline;
+}
+
+#ArielWinter {
+  margin-right: 5%;
+  color: #999999;
+  padding-top: 9px;
+  padding-left: 25px;
+  border-left-style: solid;
+  border-left-color: #999999;
+  border-left-width: thin;
+  padding-bottom: 3px;
+  height: 35px;
+  margin-bottom: 0px;
+  font-size: 12px;
+}
+
+#avatar {
+  margin-right: 15px;
+  padding-left: 15px;
+  border-left-style: solid;
+  border-left-color: #999999;
+  border-left-width: thin;
+  padding-top: 7px;
+  padding-bottom: 3px;
+  height: 35px;
+  width: 40px;
+}
+
+#logout {
+  padding-top: 9px;
+  margin-right: 15px;
+  padding-right: 15px;
+  border-right-style: solid;
+  border-right-color: #999999;
+  border-right-width: thin;
+  padding-bottom: 15px;
+  height: 35px;
+  margin-bottom: 0px;
+  font-size: 12px;
+}
+
+#social {
+  height: 15px;
+  width: auto;
+  margin-top: 12px;
+}
+
+#more {
+  display: none;
+}
+
+#notifications{
+  display: none;
+}
 
 /* on small screens, grid reshapes*/
 @media screen and (max-width:767px) {
   .site{
     grid-template-columns: 1fr;
-    grid-template-rows: 28px 70px 65px 300px 150px 25px;
+    grid-template-rows: 28px 70px 65px 300px 150px 35px;
     grid-template-areas:
       'tp'
       'nv'
@@ -299,6 +390,49 @@
 
   .fa-search {
     padding-right: 5px;
+  }
+
+  #ArielWinter, #tutorials, #blog, #support {
+    display: none;
+  }
+
+  #more {
+    display: inherit;
+    color: #999999;
+    padding-top: 9px;
+    font-size: 12px;
+    margin-right: 15px;
+    padding-right: 15px;
+    margin-bottom: 0px;
+  }
+
+  #more:hover {
+    text-decoration: underline;
+  }
+
+  #notifications {
+    display: inherit;
+    padding-top: 9px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 12px;
+    border-left-style: solid;
+    border-left-color: #999999;
+    border-left-width: thin;
+    height: 35px;
+    margin-bottom: 0px;
+  }
+
+  #avatar{
+    margin-right: 5px;
+    padding-left: 15px;
+    border-left-style: solid;
+    border-left-color: #999999;
+    border-left-width: thin;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    height: 35px;
+    width: 34px;
   }
 
 }
