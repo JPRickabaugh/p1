@@ -213,6 +213,10 @@
   margin-right: 5px;
 }
 
+.leftbutton:hover {
+  transform: scale(1.1);
+}
+
 .rightbutton {
   position: relative;
   bottom: 1px;
@@ -223,6 +227,10 @@
   background-color: white;
   border-style: none;
   margin-left: 5px;
+}
+
+.rightbutton:hover {
+  transform: scale(1.1);
 }
 
 #announcements {
@@ -273,6 +281,10 @@
   height: 25px;
 }
 
+.taskssettings:hover {
+  transform: scale(1.1);
+}
+
 .tasklistings {
   height: 10px;
   width: 100%;
@@ -282,12 +294,9 @@
   border-bottom-color: darkgray;
   position: relative;
   bottom: 30px;
+  z-index: 1;
 }
 
-.tl1:hover, .tl2:hover, .tl3:hover, .tl4:hover, {
-  color: #cccccc;
-  background-color: black;
-}
 
 .dot {
   height: 50%;
@@ -323,7 +332,6 @@
   height: 60%;
   width: 50px;
 }
-
 .bluehead {
   padding-left: 5px;
   padding-top: 5px;
@@ -338,6 +346,23 @@
   width: 15px;
   text-align: center;
 }
+
+.tasklistings:hover .headcount{
+  color: gray;
+}
+.tasklistings:hover .bluehead {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.tasklistings:hover .dot{
+  background-color: gray;
+}
+
+.tasklistings:hover .tasklistingtext {
+  color: gray;
+}
+
 
 .reccomendations {
   height: 521px;
@@ -365,6 +390,45 @@
   border-bottom-color: #DFDFDF;
   position: relative;
   bottom: 30px;
+  z-index: 1;
+}
+
+.reccomendationicons{
+  background-color: none;
+  height: 60%;
+  width: 36px;
+  position: relative;
+  top: 15px;
+  left: 10px;
+  z-index: 0;
+}
+
+.reciconimg {
+  height: 80%;
+  width: auto;
+  margin-left: 5px;
+  margin-top: 2px;
+  z-index: 0;
+}
+
+.category {
+  position: relative;
+  font-size: 12px;
+  bottom: 27px;
+  left: 60px;
+  color: #818181;
+  z-index: 0;
+}
+
+.rectitle {
+  font-size: 16px;
+  color: #818181;
+  z-index: 0;
+}
+
+.reccomendationlistings:hover {
+  color: black;
+  text-decoration: none;
 }
 
 .reccomendationlistings:hover .category{
@@ -377,51 +441,7 @@
   filter: grayscale(100%);
 }
 
-.reccomendationlistings:hover {
-  color: black;
-  text-decoration: none;
-}
-
-.reccomendationicons{
-  background-color: none;
-  height: 60%;
-  width: 36px;
-  position: relative;
-  top: 15px;
-  left: 10px;
-}
-
-.reciconimg {
-  height: 80%;
-  width: auto;
-  margin-left: 5px;
-  margin-top: 2px;
-}
-
-.category {
-  position: relative;
-  font-size: 12px;
-  bottom: 27px;
-  left: 60px;
-  color: #818181;
-}
-
-.category:hover .reciconimg{
-  color: black;
-  text-decoration: none;
-}
-
-.reccomendationlistings:hover {
-  color: black;
-  text-decoration: none;
-}
-
-.rectitle {
-  font-size: 16px;
-  color: #818181;
-}
-
-.rectitle:hover {
+.reccomendationlistings:hover .rectitle{
   color: black;
   text-decoration: none;
 }
@@ -674,8 +694,14 @@
   background-color: transparent;
   border: none;
   position: relative;
-  right: 6px;
+  right: 1%;
   top: 28px;
+  z-index: 1;
+}
+
+.back:hover {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 .next {
   background-color: transparent;
@@ -683,6 +709,12 @@
   position: relative;
   bottom: 140px;
   left: 96%;
+  z-index: 1;
+}
+
+.next:hover {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
 .carousel{
@@ -715,6 +747,10 @@ margin-bottom: 25px;
   margin-top: 25px;
   margin-bottom: 25px;
   margin-left: 30px;
+}
+
+.wwys:hover, .swoa:hover, .v2ic:hover {
+  cursor: pointer;
 }
 
 .footer{
@@ -810,18 +846,19 @@ margin-bottom: 25px;
 }
 
 #more {
-  display: none;
+  display: block;
+  background-color: ;
 }
 
 #notifications{
-  display: none;
+  display: block;
 }
 
 /* on small screens, grid reshapes*/
 @media screen and (max-width:767px) {
   .site{
     grid-template-columns: 1fr;
-    grid-template-rows: 28px 70px 65px 150px 150px 150px 35px;
+    grid-template-rows: 28px 70px 65px 900px 760px 35px;
     grid-template-areas:
       'tp'
       'nv'
@@ -858,12 +895,6 @@ margin-bottom: 25px;
   #helpbutton {
     background-image: url("../img/helpicon.png");
     margin-right: 3%;
-  }
-
-
-
-  .main {
-
   }
 
   .icons {
@@ -946,10 +977,52 @@ margin-bottom: 25px;
   }
 
   .mainbox {
-    position: relative;
-    bottom: 0px;
-    background-color: white;
+    background-color: ;
+    margin-left: 0%;
+    width: 100%;
+    margin-left: 2%;
+  }
+
+.mainboxtop {
+  margin-top: 240px;
+  height: 100px;
+  background-color: blue;
+}
+
+  .carousel{
+    height: 760px;
+  }
+
+  .carouselbox{
+    background-color: #2498f4;
+    width: 80%;
+    height: 600px;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.44);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.44);
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.44);
+    flex-direction: column;
+  }
+
+  .wwys {
+    width: 80%;
     margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .swoa {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .v2ic {
+    margin-left: 10%;
+    width: 80%;
+    margin-right: 10%;
+  }
+
+  .wwys:hover, .swoa:hover, .v2ic:hover {
+    cursor: pointer;
   }
 
   #ArielWinter, #tutorials, #blog, #support {
