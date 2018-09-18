@@ -367,13 +367,35 @@
   bottom: 30px;
 }
 
+.reccomendationlistings:hover .category{
+  color: black;
+  text-decoration: none;
+}
+
+.reccomendationlistings:hover .reciconimg{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.reccomendationlistings:hover {
+  color: black;
+  text-decoration: none;
+}
+
 .reccomendationicons{
-  background-color: gray;
-  height: 50%;
-  width: 30px;
+  background-color: none;
+  height: 60%;
+  width: 36px;
   position: relative;
   top: 15px;
   left: 10px;
+}
+
+.reciconimg {
+  height: 80%;
+  width: auto;
+  margin-left: 5px;
+  margin-top: 2px;
 }
 
 .category {
@@ -384,7 +406,12 @@
   color: #818181;
 }
 
-.category:hover {
+.category:hover .reciconimg{
+  color: black;
+  text-decoration: none;
+}
+
+.reccomendationlistings:hover {
   color: black;
   text-decoration: none;
 }
@@ -395,7 +422,7 @@
 }
 
 .rectitle:hover {
-  color:black;
+  color: black;
   text-decoration: none;
 }
 .analytics {
