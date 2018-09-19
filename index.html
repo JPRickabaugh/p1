@@ -1,22 +1,23 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- general bootstrap styling/font css, kept for font preference -->
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/sprites.css"  />
     <title>Project 1</title>
   </head>
+  <!-- head contains spritesheet, stylesheet, and meta tags -->
   <body class="site">
     <div class="top" "flex-container">
       <p id="toptext">MINI of Raleigh</p>
       <button id="settingsbutton"></button>
       <button id="helpbutton"></button>
     </div>
+    <!-- light blue utility bar at top with MINI text and buttons -->
     <div class="navbar flex-container">
         <div class="icon-dashboard icons"></div>
         <div class="icon-customers icons"></div>
@@ -25,6 +26,7 @@
         <div class="icon-page-creator icons"></div>
         <div class="icon-analytics icons"></div>
     </div>
+    <!-- navbar div, with divs inside that display the corresponding sprites from the spritesheet -->
     <div class="header">
       <div class="search flex-container">
         <p id="dashboardtext">Dashboard</p>
@@ -32,8 +34,9 @@
         <button class="searchbutton" type="submit"><i class="fa fa-search"></i></button>
       </div>
     </div>
+    <!-- header div, which contains the search bar and header text -->
     <div class="main">
-      <div class="mainshadowbox"></div>
+      <div class="mainshadowbox"></div> <!-- div which has shadow effect behind main content -->
       <div class="mainbox">
         <div class="mainboxtop flex container">
           <p id="announcements">ANNOUNCEMENTS</p>
@@ -42,10 +45,12 @@
             <button class="leftbutton"></button>
             <button class="rightbutton"></button>
           </div>
-        </div>
+          <!-- button housing div -->
+        </div> <!-- the top section of the main container, which displays announcements and has navigation buttons -->
         <div class="tasks">
           <p id="taskstitle">Tasks</p>
           <img href="" src="img/Icon_ Settings.png" class="taskssettings" />
+          <!-- settings button -->
           <div class="tasklistings tl1">
             <span class="dot">1</span>
             <p class="tasklistingtext">Welcome Contacts</p>
@@ -53,7 +58,9 @@
               <img src="img/bluehead.png" class="bluehead"/>
               <p class="headcount">32</p>
             </div>
+            <!-- div containing head icon and person count -->
           </div>
+          <!-- general div for task listing - holds the number/circle, listing name, and button with person count -->
           <div class="tasklistings tl2">
             <span class="dot">2</span>
             <p class="tasklistingtext">Provide Responses</p>
@@ -61,7 +68,9 @@
               <img src="img/bluehead.png" class="bluehead"/>
               <p class="headcount">36</p>
             </div>
+            <!-- div containing head icon and person count -->
           </div>
+          <!-- general div for task listing - holds the number/circle, listing name, and button with person count -->
           <div class="tasklistings tl3">
             <span class="dot">3</span>
             <p class="tasklistingtext">Review Activity</p>
@@ -69,7 +78,9 @@
               <img src="img/bluehead.png" class="bluehead"/>
               <p class="headcount">36</p>
             </div>
+            <!-- div containing head icon and person count -->
           </div>
+          <!-- general div for task listing - holds the number/circle, listing name, and button with person count -->
           <div class="tasklistings tl4">
             <span class="dot">4</span>
             <p class="tasklistingtext">Reach Out</p>
@@ -77,49 +88,73 @@
               <img src="img/bluehead.png" class="bluehead"/>
               <p class="headcount">3</p>
             </div>
+            <!-- div containing head icon and person count -->
           </div>
+          <!-- general div for task listing - holds the number/circle, listing name, and button with person count -->
         </div>
+        <!-- tasks section, contains title, settings button, and individual task listings -->
         <div class="reccomendations">
           <p id="reccomendationstitle">Reccomendations</p>
           <div class=reccomendationlistings>
-            <div class="reccomendationicons"><img class="reciconimg" src="img/articleicon.png" /></div>
+            <div class="reccomendationicons">
+              <img class="reciconimg" src="img/articleicon.png" />
+            </div>
+            <!--div holds icon -->
             <a href=""class="category">Article</br><span class="rectitle">7 Steps to getting more Fans</span></a>
+            <!-- link with category and article title -->
           </div>
+          <!-- general div for reccomendations, contains div with relevant icon as well as the relevant article and its category -->
           <div class=reccomendationlistings>
-            <div class="reccomendationicons"><img class="reciconimg" src="img/articleicon.png" /></div>
+            <div class="reccomendationicons">
+              <img class="reciconimg" src="img/articleicon.png" />
+            </div>
             <a href=""class="category">Article</br><span class="rectitle">Increase traction with more Interactions</span></a>
           </div>
+          <!-- general div for reccomendations, contains div with relevant icon as well as the relevant article and its category -->
           <div class=reccomendationlistings>
-            <div class="reccomendationicons"><img class="reciconimg" src="img/checklisticon.png" /></div>
+            <div class="reccomendationicons">
+              <img class="reciconimg" src="img/checklisticon.png" />
+            </div>
             <a href=""class="category">Checklist</br><span class="rectitle">Creating a Promotion</span></a>
           </div>
+          <!-- general div for reccomendations, contains div with relevant icon as well as the relevant article and its category -->
           <div class=reccomendationlistings>
-            <div class="reccomendationicons"><img class="reciconimg" src="img/tipicon.png" /></div>
+            <div class="reccomendationicons">
+              <img class="reciconimg" src="img/tipicon.png" />
+            </div>
             <a href=""class="category">Tip</br><span class="rectitle">Share More</span></a>
           </div>
+          <!-- general div for reccomendations, contains div with relevant icon as well as the relevant article and its category -->
         </div>
+        <!-- reccomendations section, contians title and reccomendations with their own respective icons, titles, and categories -->
         <div class="analytics">
           <p id="analyticstitle">Analytics</p>
           <div class="analyticsheader">
             <p id="activity">ACTIVITY</p>
             <div class="dropdown">
               <button class="dropbtn">06/28/11 - 07/21/11 <img src="img/dropdownbutton.png" /></button>
+              <!-- button is clicked to activate dropdown which contains links for other time periods of data -->
               <div class="dropdown-content">
-                <a href="#">07/21/11 - 08/14/11</a>
-                <a href="#">08/14/11 - 09/07/11</a>
-                <a href="#">09/07/11 - Onward</a>
+                <a href="">07/21/11 - 08/14/11</a>
+                <a href="">08/14/11 - 09/07/11</a>
+                <a href="">09/07/11 - Onward</a>
               </div>
+              <!-- dropdown content which appears when the dropdown button is clicked. contains links to other time periods of data collection -->
             </div>
+            <!-- dropdown menu div-->
           </div>
+          <!-- header of analytics section, contains graph title and date selection drop down menu -->
           <div class="analyticschart">
             <img src="img/bargraph.png" id="bargraph"/>
           </div>
+          <!-- image of bar chart -->
           <div class="analyticspies">
             <p class="channels">CHANNELS</p>
             <img id="channelpie" src="img/channelspie.png" />
             <p class="referrals">REFERRALS</p>
             <img id="referralspie" src="img/referralspie.png" />
           </div>
+          <!-- contains images of 2 pie charts and titles -->
           <div class="analyticsbuttons">
             <form action="/action_page.php" method="get">
               <input type="checkbox" name="vehicle" value="facebook" class="fbutton" checked>
@@ -131,22 +166,31 @@
               <input type="checkbox" name="vehicle" value="google+" class="gbutton">
               <div class="google">Google+</div>
             </form>
+            <!-- form for checkboxes. each input is the checkbox and the divs hold the relevant text and color background -->
           </div>
+          <!-- div contains 4 analytics checkboxes displayed below graph -->
         </div>
+        <!-- analytics section. split into different areas containing a bar graph, 2 pie graphs, and data selections buttons/checkboxes -->
         <div class="contactscustomers">
           <img src="img/contacts.png" class="contacts"/>
           <img src="img/customers.png" class="customers"/>
         </div>
+        <!-- images of customers and contacts -->
         <div class="didyouknow">
           <div class="didyouknowbox">
             <button class="back"><img src="img/back.png" /></button>
+            <!-- nav button -->
             <p class="didyouknowtext">
               DID YOU KNOW? <br />
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
+
             <button class="next"><img src="img/next.png" /></button>
+            <!-- nav button -->
           </div>
+          <!-- banner div -->
         </div>
+        <!-- did you know section, contains banner with text and navigation buttons -->
       </div>
     </div>
     <div class="carousel">
@@ -162,17 +206,15 @@
       <p id= "blog">Blog</p>
       <p id="more">More</p>
       <p id="ArielWinter"><a href="">Ariel Winter</a> likes your <a href="">Win A Cooper Sweepstakes</a> promotion</p>
+      <!-- notification with links -->
       <p id="notifications"><a href="">Notifications</a></p>
-      <!-- insert little upward arrow -->
       <img src="img/avatar.png" id="avatar" alt="user avatar/icon"/>
+      <!-- avatar icon -->
       <p id="logout"><a href="">Logout</a></p>
+      <!-- logout -->
       <img src="img/social.png" id="social"/>
+      <!-- social media images -->
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
+    <!-- footer, contains multiple links, avatar image, notifications, social media images, and logout button. links change on mobile for responsive design -->
   </body>
 </html>

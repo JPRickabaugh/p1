@@ -12,17 +12,13 @@
     'car car car car car'
     'ft ft ft ft ft';
 }
-
+/* site grid layout, dictates size and location of all major sections */
 .top{
   grid-column: 1/6;
   background-color: #2292eb;
   color: white;
 }
-
-.topinnerdivs{
-  width: 500px;
-}
-
+/* top utility bar styling, changes background and text color, spands entire grid */
 #toptext {
   color: white;
   margin-right: 30px;
@@ -34,6 +30,7 @@
   left: 78%;
   bottom: 5px;
 }
+/* MINI text styling for color, positioning, and size */
 
 #settingsbutton, #helpbutton {
   float: right;
@@ -46,62 +43,63 @@
   bottom: 40px;
   background-color: #2292eb;
 }
+/*button general styling for positioning, color, and size */
 
 #settingsbutton {
   background-image: url("../img/settingsicon.png");
   margin-right: 9%;
 }
-
+/* settings button image */
 #helpbutton {
   background-image: url("../img/helpicon.png");
   margin-right: 1%;
 }
-
+/* help button image */
 .icons{
   margin-bottom: 15px;
 }
-
+/* margin for positioning of icons on nav */
 .icon-dashboard {
   margin-left: 0px;
   margin-right: 30px;
 }
-
+/* styling of dashboard icon */
 .icon-customers {
   margin-left: 0px;
   margin-right: 35px;
 }
-
+/* styling of customers icon */
 .icon-messages {
   margin-left: 0px;
   margin-right: 30px;
 }
-
+/* styling of messages icon */
 .icon-promotions {
   margin-left: 0px;
   margin-right: 48px;
 }
-
+/* styling of corresponding icon */
 .icon-page-creator {
   margin-left: 0px;
   margin-right: 48px;
 }
-
+/* styling of corresponding icon */
 .icon-analytics {
   margin-left: 0px;
   margin-right: 10px;
 }
-
-.header{
-  grid-column: 1/6;
-  background: white;
-}
-
+/* styling of corresponding icon */
 .navbar{
   grid-column: 1/6;
   background-image: url("../img/desktopnavbackground2.png");
   background-position: center;
-  color: white;
 }
+/*navbar styling for grid space and background*/
+.header{
+  grid-column: 1/6;
+  background-color: white;
+}
+/* general header grid space and color */
 
 .flex-container {
   display: flex;
@@ -110,7 +108,7 @@
   align-content: space-between;
   padding: 0px;
 }
-
+/* flex styling for alignment of icons */
 .search {
   background-color: #33cc66;
   width: 82%;
@@ -121,7 +119,7 @@
   align-self: center;
   border-radius: 5px;
 }
-
+/* search bar styling for color, size, and position */
 #dashboardtext {
   color: white;
   margin-right: 30px;
@@ -130,14 +128,14 @@
   font-weight: 400;
   width: 25%;
 }
-
+/* page title text (dashbord, in this case) for color, positioning, and size */
 .searchbox {
   margin-left: 52%;
   height: 50%;
   margin-top: 15px;
   border: 0px;
 }
-
+/* search box positioning */
 .searchbutton {
   float: right;
   margin-top: 15px;
@@ -149,13 +147,13 @@
   cursor: pointer;
   color: #2498f4;
 }
-
+/* search box appearance and positioning */
 
 .main{
   grid-column: 1/6;
   background: white;
 }
-
+/* main content grid area and color */
 .mainshadowbox{
   display: inherit;
   background-image: url("../img/shade.png");
@@ -166,7 +164,7 @@
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
-
+/* shadowbox styling. shadow image spans the div, styling for size and position, z index adjustment to put it further back, border radius adjustment for rounded corners */
 .mainbox {
   position: relative;
   bottom: 235px;
@@ -178,7 +176,7 @@
   -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.44);
   box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.44);
 }
-
+/* box contains main content. Styling for position, color, size, shadow effects */
 .mainboxtop {
   width: 100%;
   height: 46px;
@@ -188,7 +186,7 @@
   margin-right: 0px;
   margin-left: 0px;
 }
-
+/* top section of main content, holds announcements and buttons. styling for position of div and size */
 .mbtright {
   background-color: none;
   width: 12%;
@@ -200,7 +198,7 @@
   padding-left: 0%;
   padding-right: 5%;
 }
-
+/*styling for div which houses nav buttons. styling for position and size */
 .leftbutton {
   position: relative;
   bottom: 1px;
@@ -212,11 +210,11 @@
   border-style: none;
   margin-right: 5px;
 }
-
+/* styling for left button position and size, button is background of div */
 .leftbutton:hover {
   transform: scale(1.1);
 }
-
+/* on hover, the button grows a little (by a factor of 1.1)*/
 .rightbutton {
   position: relative;
   bottom: 1px;
@@ -228,11 +226,11 @@
   border-style: none;
   margin-left: 5px;
 }
-
+/* same as left button styling, but adjusted to fit it to the right side */
 .rightbutton:hover {
   transform: scale(1.1);
 }
-
+/* right button grows too */
 #announcements {
   padding-top: 10px;
   color: #fe7f13;
@@ -244,7 +242,7 @@
   border-right-width: thin;
   border-right-color: #e9e9e9;
 }
-
+/* announcements text styling for positioning, color, size, and border */
 #topdummytext{
   padding-top: 10px;
   padding-left: 12px;
@@ -257,7 +255,7 @@
   position: relative;
   bottom: 62px;
 }
-
+/*dummy text styling for position, color, size, and border */
 .tasks {
   height: 283px;
   width: 36%;
@@ -265,7 +263,7 @@
   border-style: solid;
   border-width: thin;
 }
-
+/* styling for general task area, color, and border */
 #taskstitle {
   color: #2498f4;
   font-size: 36px;
@@ -273,18 +271,18 @@
   padding-top: 0px;
   margin-bottom: 5px;
 }
-
+/* styling for task title text color and position*/
 .taskssettings {
   position: relative;
   bottom: 43px;
   left: 367px;
   height: 25px;
 }
-
+/* styling for settings button position*/
 .taskssettings:hover {
   transform: scale(1.1);
 }
-
+/* on hover the settings button grows */
 .tasklistings {
   height: 10px;
   width: 100%;
@@ -296,7 +294,7 @@
   bottom: 30px;
   z-index: 1;
 }
-
+/* styling for task listings size, position, border, and z index position (the whole div becomes a button and the content is really in the background) */
 
 .dot {
   height: 50%;
@@ -310,7 +308,7 @@
   background-color: #32cc66;
   color: white;
 }
-
+/* styling for circle which contains task listing number. color, position, size */
 .tasklistingtext {
   color: #2498f4;
   position: relative;
@@ -318,13 +316,11 @@
   left: 60px;
   bottom: 18px;
 }
-
+/*styling for task listing text. color, position, size */
 .taskbuttons {
   border-style: solid;
   border-width: thin;
   border-color: darkgray;
-  height: 10px;
-  width: 10px;
   position: relative;
   bottom: 68px;
   left: 346px;
@@ -332,11 +328,12 @@
   height: 60%;
   width: 50px;
 }
+/* styling for small buttons which contain the head icon and person count. position, border, size, rounded corners */
 .bluehead {
   padding-left: 5px;
   padding-top: 5px;
 }
-
+/* styling for head icon position*/
 .headcount {
   position: relative;
   bottom: 70%;
@@ -346,24 +343,24 @@
   width: 15px;
   text-align: center;
 }
-
+/* styling for head count position, text color, and size */
 .tasklistings:hover .headcount{
   color: gray;
 }
+/* on hover of tasklisting div, headcount goes gray */
 .tasklistings:hover .bluehead {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
-
+/* on hover of same div, bluehead turns gray */
 .tasklistings:hover .dot{
   background-color: gray;
 }
-
+/* on hover of same div, dot turns gray */
 .tasklistings:hover .tasklistingtext {
   color: gray;
 }
-
-
+/*on hover of same div, task listing text turns gray */
 .reccomendations {
   height: 521px;
   width: 36%;
@@ -372,7 +369,7 @@
   border-width: thin;
   border-top-style: none;
 }
-
+/* general reccomendations section area and border styling */
 #reccomendationstitle {
   color: #2498f4;
   font-size: 36px;
@@ -380,9 +377,8 @@
   padding-top: 5px;
   margin-bottom: 25px;
 }
-
+/* title stying for reccomendations section. positioning, color, and size */
 .reccomendationlistings {
-  height: 10px;
   width: 100%;
   height: 12%;
   border-bottom-style: dotted;
@@ -392,9 +388,8 @@
   bottom: 30px;
   z-index: 1;
 }
-
+/* general styling for reccomendation listings. size, border, position, and z index adjustment to allow for using the whole div as an invisible button, similar to tasks section */
 .reccomendationicons{
-  background-color: none;
   height: 60%;
   width: 36px;
   position: relative;
@@ -402,7 +397,7 @@
   left: 10px;
   z-index: 0;
 }
-
+/* styling for reccomendation icons div size, position, and z index */
 .reciconimg {
   height: 80%;
   width: auto;
@@ -410,7 +405,7 @@
   margin-top: 2px;
   z-index: 0;
 }
-
+/* styling for icon image size, positioning, and z index. image goes within aforementioned div */
 .category {
   position: relative;
   font-size: 12px;
@@ -419,32 +414,33 @@
   color: #818181;
   z-index: 0;
 }
-
+/* styling for category text on top of listing titles. position, size, color, z index */
 .rectitle {
   font-size: 16px;
   color: #818181;
   z-index: 0;
 }
-
+/* styling for listing titles' size, color, and z index */
 .reccomendationlistings:hover {
   color: black;
   text-decoration: none;
 }
-
+/* on hover of listing div, title text turns black */
 .reccomendationlistings:hover .category{
   color: black;
   text-decoration: none;
 }
-
+/* on hover of listing div, category text turns black */
 .reccomendationlistings:hover .reciconimg{
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
-
+/* on hover of div, icon applies grayscale filter */
 .reccomendationlistings:hover .rectitle{
   color: black;
   text-decoration: none;
 }
+/* additional styling. title text wouldn't turn black without this styling or prior styling */
 .analytics {
   height: 406px;
   width: 64%;
@@ -455,7 +451,7 @@
   bottom: 804px;
   left: 36%;
 }
-
+/* general analytics area styling for size, border, and position */
 #analyticstitle {
   color: #2498f4;
   font-size: 36px;
@@ -463,6 +459,7 @@
   padding-top: 0px;
   margin-bottom: 5px;
 }
+/* styling for analytics title color, size, and positiong */
 
 .analyticsheader {
   border-right-style: solid;
@@ -471,12 +468,12 @@
   width: 75%;
   height: 10%;
 }
-
+/* general styling for analytics header border and size */
 #activity {
   padding-left: 6%;
 }
+/* position styling for header text */
 
-/* Dropdown Button */
 .dropbtn {
   position: relative;
   bottom: 40px;
@@ -488,15 +485,13 @@
   border: none;
   background-color:  #f1f1f1
 }
-
-/* The container <div> - needed to position the dropdown content */
+/* Dropdown Button */
 .dropdown {
   position: relative;
   display: inline-block;
   height:90px;
 }
-
-/* Dropdown Content (Hidden by Default) */
+/* The container <div> - needed to position the dropdown content */
 .dropdown-content {
   margin-right: 50px;
   margin-left: 338px;
@@ -510,8 +505,7 @@
   height: 90px;
   width: 169px;
 }
-
-/* Links inside the dropdown */
+/* Dropdown Content styling (Hidden by Default) for position, background color, shadow, z index, size, etc */
 .dropdown-content a {
   color: black;
   padding: 2px 2px;
@@ -519,13 +513,11 @@
   display: block;
   height: 30px;
 }
-
-/* Change color of dropdown links on hover */
+/* Links inside the dropdown */
 .dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
+/* Change color of dropdown links on hover */
 .dropdown:hover .dropdown-content {display: block;}
-
+/* Show the dropdown menu on hover */
 .analyticschart{
   border-right-style: solid;
   border-right-color: #e9e9e9;
@@ -533,14 +525,14 @@
   height: 233px;
   width: 75%;
 }
-
+/* styling for div which holds bargraph. borders and size */
 #bargraph {
   margin-left: 10%;
   margin-top: 5%;
   width: 80%;
   height: auto;
 }
-
+/* styling for bar graph image positioning and size */
 .analyticspies {
   padding-top: 7%;
   color: #999999;
@@ -551,18 +543,18 @@
   position: relative;
   bottom: 320px;
 }
-
+/* styling for pie chart container div position, text color, and size*/
 #channelpie {
   margin-bottom: 20px;
 }
-
+/*channel pie chart positioning */
 .analyticsbuttons{
   width: 75%;
   position: relative;
   bottom: 250px;
   left: 15%;
 }
-
+/*container div for checkboxes. size and positiong */
 .facebook{
   color: white;
   background-color: #114570;
@@ -575,7 +567,7 @@
   bottom: 22px;
   left: 3%;
 }
-
+/* styling for decroative div next to facebook checkbox. styling for all following decroative divs in this section adjusts size, position, background color, and text color */
 .twitter{
   color: white;
   background-color: #2298f4;
@@ -594,7 +586,7 @@
   bottom: 41px;
   left: 20%;
 }
-
+/* positioning for twitter checkbox. all following checkbox styling in this section is for positioning */
 .foursquare{
   color: white;
   background-color: #3a599b;
@@ -636,7 +628,6 @@
 }
 
 .contactscustomers{
-  height: 225px;
   width: 64%;
   border-style: solid;
   border-width: thin;
@@ -647,19 +638,18 @@
   bottom: 804px;
   left: 36%;
 }
-
+/*contacts/customers section div size, boder, and position */
 .contacts {
   margin-left: 13%;
   margin-top: 3%;
 }
-
+/* positioning for ad picture */
 .customers {
   margin-left: 10%;
   margin-top: 3%;
 }
-
+/* positioning for ad picture */
 .didyouknow {
-  height: 173px;
   width: 64%;
   border-style: solid;
   border-width: thin;
@@ -670,7 +660,7 @@
   bottom: 804px;
   left: 36%;
 }
-
+/*did you know section size, border, and positiong */
 .didyouknowbox {
   height: 72%;
   width: 90%;
@@ -679,7 +669,7 @@
   margin-top: 1%;
   border-radius: 5px;
 }
-
+/* size, color, rounding, and positioning of did you know banner */
 .didyouknowtext {
   color: white;
   font-size: 12px;
@@ -689,7 +679,7 @@
   position: relative;
   bottom: 45%;
 }
-
+/*color, size, and positioning of did you know text */
 .back {
   background-color: transparent;
   border: none;
@@ -698,11 +688,12 @@
   top: 28px;
   z-index: 1;
 }
-
+/* back button aesthetic styling, positioning and z index adjustment */
 .back:hover {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
+/* when mouse hovers over back button, grayscale filter is applied */
 .next {
   background-color: transparent;
   border: none;
@@ -711,17 +702,16 @@
   left: 96%;
   z-index: 1;
 }
-
+/* same styling parameters as back button styling */
 .next:hover {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
-
+/* same effect as back button hover state */
 .carousel{
   grid-column: 1/6;
-  background: white;
 }
-
+/* carousel grid area spacing */
 .carouselbox{
   background-color: #2498f4;
   width: 80%;
@@ -731,28 +721,28 @@
   -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.44);
   box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.44);
 }
-
+/*carousel div styling for color, size, positioning, and css shadows */
 .wwys {
   margin-top: 25px;
   margin-bottom: 25px;
   margin-right: 30px;
 }
-
+/*positioning of ad image */
 .swoa {
 margin-top: 15px;
 margin-bottom: 25px;
 }
-
+/* ad positioning */
 .v2ic {
   margin-top: 25px;
   margin-bottom: 25px;
   margin-left: 30px;
 }
-
+/*ad positioning */
 .wwys:hover, .swoa:hover, .v2ic:hover {
   cursor: pointer;
 }
-
+/* cursor changes on hover to represent ad appearance */
 .footer{
   grid-column:1/6;
   background-color: #f5f5f5;
@@ -761,14 +751,14 @@ margin-bottom: 25px;
   border-top-style: solid;
   border-top-width: thin;
 }
-
+/* footer grid area color, size, and border */
 #tutorials {
   padding-right: 15px;
   color: #999999;
   margin-top: 9px;
   font-size: 12px;
 }
-
+/*positioning, color, and size for tutorial link */
 #support {
   padding-left: 15px;
   padding-right: 15px;
@@ -781,7 +771,7 @@ margin-bottom: 25px;
   height: 35px;
   font-size: 12px;
 }
-
+/* positioning, text color, border, and size styling for support link */
 #blog {
   border-left-style: solid;
   border-left-color: #e9e9e9;
@@ -795,11 +785,11 @@ margin-bottom: 25px;
   padding-top: 9px;
   font-size: 12px;
 }
-
+/* border, position, color, and size styling for blog link */
 #blog:hover, #support:hover, #tutorials:hover {
   text-decoration: underline;
 }
-
+/* hover state link decoration, creates underline */
 #ArielWinter {
   margin-right: 5%;
   color: #999999;
@@ -813,7 +803,7 @@ margin-bottom: 25px;
   margin-bottom: 0px;
   font-size: 12px;
 }
-
+/*styling for notification text. positioning, color, border, and size */
 #avatar {
   margin-right: 15px;
   padding-left: 15px;
@@ -825,7 +815,7 @@ margin-bottom: 25px;
   height: 35px;
   width: 40px;
 }
-
+/* positioning, border, and size of avatar icon */
 #logout {
   padding-top: 9px;
   margin-right: 15px;
@@ -838,31 +828,22 @@ margin-bottom: 25px;
   margin-bottom: 0px;
   font-size: 12px;
 }
-
+/* logout link positioning, border, size */
 #social {
   height: 15px;
   width: auto;
   margin-top: 12px;
 }
-
-#more {
-  display: block;
-  background-color: ;
-}
-
-#notifications{
-  display: block;
-}
-
+/*social icon positioning */
 #more{
   display: none;
 }
-
+/* invisible link which replaces first 3 links on conversion to mobile */
 #notifications{
   display: none;
 }
+/* invisible link which replaces notification text on conversion to mobile*/
 
-/* on small screens, grid reshapes*/
 @media screen and (max-width:767px) {
   .site{
     grid-template-columns: 1fr;
@@ -875,7 +856,7 @@ margin-bottom: 25px;
       'car'
       'ft';
   }
-  /* sidebar and main switch positions */
+  /* on small screens, grid reshapes into vertical series of divs with varying height */
 
   #toptext {
     color: white;
@@ -888,64 +869,64 @@ margin-bottom: 25px;
     left: 54%;
     bottom: 5px;
   }
-
+  /* MINI text styling for color, positioning, and size */
   #settingsbutton, #helpbutton {
     margin-bottom: 20px;
     position: relative;
     bottom: 39px;
   }
-
+/*button general styling for positioning, color, and size */
   #settingsbutton {
     background-image: url("../img/settingsicon.png");
     margin-right: 5%;
   }
-
+/* settings button image */
   #helpbutton {
     background-image: url("../img/helpicon.png");
     margin-right: 3%;
   }
-
+/* help button image */
   .icons {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-
+/* margin for positioning of icons on nav */
   .icon-dashboard {
     margin-left: 0px;
     margin-right: 5px;
   }
-
+/* styling of dashboard icon */
   .icon-customers {
     margin-left: 0px;
     margin-right: 5px;
   }
-
+/* styling of respective icon */
   .icon-messages {
     margin-left: 0px;
     margin-right: 5px;
   }
-
+/* styling of respective icon */
   .icon-promotions {
     margin-left: 0px;
     margin-right: 5px;
   }
-
+/* styling of respective icon */
   .icon-page-creator {
     margin-left: 0px;
     margin-right: 5px;
   }
-
+/* styling of respective icon */
   .icon-analytics {
     margin-left: 0px;
     margin-right: 5px;
   }
-
+/* styling of respective icon */
   .header{
     grid-column: 1/6;
     background: white;
     width: 100%;
   }
-
+/* general header grid space and color */
   .search {
     height: 75%;
     margin-top: 10px;
@@ -954,7 +935,7 @@ margin-bottom: 25px;
     width: 80%;
     position: relative;
   }
-
+/* search bar styling for size and position */
   #dashboardtext {
     color: white;
     margin-left: 15px;
@@ -963,14 +944,14 @@ margin-bottom: 25px;
     font-weight: 400;
     padding: 0px;
   }
-
+/* styling for page title text (Dashboard) color, position, and size */
   .searchbox {
     margin-left: 10%;
     height: 50%;
     margin-top: 13px;
     width: 50%;
   }
-
+/*searchbox div styling */
   .searchbutton {
     float: right;
     margin-top: 13px;
@@ -981,22 +962,22 @@ margin-bottom: 25px;
     border-color: white;
     cursor: pointer;
   }
-
+/* searchbox input styling */
   .fa-search {
     padding-right: 5px;
   }
-
+/* search button additional styling */
   .main{
     position: relative;
     right: 7px;
     margin-right: 0%;
     width:100%;
   }
-
+/* main content area styling */
   .mainshadowbox {
     display: none;
   }
-
+/* shadow box doesnt display on mobile */
   .mainbox {
     background-color: ;
     margin-left: 0%;
@@ -1006,7 +987,7 @@ margin-bottom: 25px;
     -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.44);
     box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.44);
   }
-
+/* mainbox adjusted styling for mobile */
   .mainboxtop {
     margin-left: 0%;
     margin-top: 240px;
@@ -1015,7 +996,7 @@ margin-bottom: 25px;
     background-color: none;
     flex-direction: column;
   }
-
+/*announcement section adjusted styling, flex direction changed */
   .mbtright {
     background-color: none;
     width: 50%;
@@ -1028,7 +1009,7 @@ margin-bottom: 25px;
     bottom: 35px;
     left: 0%;
   }
-
+/*nav button container div adjusted styling */
   .leftbutton {
     position: relative;
     bottom: 1px;
@@ -1040,11 +1021,11 @@ margin-bottom: 25px;
     border-style: none;
     margin-right: 5px;
   }
-
+/* left button  styling */
   .leftbutton:hover {
     transform: scale(1.1);
   }
-
+/* left button grows on hover */
   .rightbutton {
     position: relative;
     bottom: 1px;
@@ -1056,11 +1037,11 @@ margin-bottom: 25px;
     border-style: none;
     margin-left: 5px;
   }
-
+/* same as left button*/
   .rightbutton:hover {
     transform: scale(1.1);
   }
-
+/* same*/
   #announcements {
     color: #fe7f13;
     padding: 0px;
@@ -1070,7 +1051,7 @@ margin-bottom: 25px;
     height: 46px;
     border: none;
   }
-
+/* announcement text adjusted styling */
   #topdummytext{
     padding: 0px;
     margin-right: 5%;
@@ -1082,7 +1063,7 @@ margin-bottom: 25px;
     position: relative;
     bottom: 45px;
   }
-
+/* top dummy text adjusted styling */
   .tasks {
     height: 283px;
     width: 100%;
@@ -1090,7 +1071,7 @@ margin-bottom: 25px;
     border-style: solid;
     border-width: thin;
   }
-
+/* task area adjusted styling, now is the very top div, followed by reccomendations, analytics, customer/contacts, and did you know? */
   #taskstitle {
     color: #2498f4;
     font-size: 36px;
@@ -1098,18 +1079,18 @@ margin-bottom: 25px;
     padding-top: 0px;
     margin-bottom: 5px;
   }
-
+/* title text adjusted styling */
   .taskssettings {
     position: relative;
     bottom: 43px;
     left: 90%;
     height: 25px;
   }
-
+/* settings button adjusted styling */
   .taskssettings:hover {
     transform: scale(1.1);
   }
-
+/* button grows on hover */
   .tasklistings {
     height: 10px;
     width: 100%;
@@ -1121,8 +1102,7 @@ margin-bottom: 25px;
     bottom: 30px;
     z-index: 1;
   }
-
-
+/* task listing adjusted styling */
   .dot {
     height: 50%;
     width: 28px;
@@ -1135,7 +1115,7 @@ margin-bottom: 25px;
     background-color: #32cc66;
     color: white;
   }
-
+/* number circle adjusted styling */
   .tasklistingtext {
     color: #2498f4;
     position: relative;
@@ -1143,7 +1123,7 @@ margin-bottom: 25px;
     left: 50px;
     bottom: 18px;
   }
-
+/* task listing text adjusted styling */
   .taskbuttons {
     border-style: solid;
     border-width: thin;
@@ -1157,11 +1137,12 @@ margin-bottom: 25px;
     height: 60%;
     width: 50px;
   }
+  /* task buttons adjusted styling */
   .bluehead {
     padding-left: 5px;
     padding-top: 5px;
   }
-
+/* blue head image adjusted styling */
   .headcount {
     position: relative;
     bottom: 70%;
@@ -1171,7 +1152,7 @@ margin-bottom: 25px;
     width: 15px;
     text-align: center;
   }
-
+/* person count adjusted styling */
   .tasklistings:hover .headcount{
     color: gray;
   }
@@ -1187,7 +1168,7 @@ margin-bottom: 25px;
   .tasklistings:hover .tasklistingtext {
     color: gray;
   }
-
+/* on hover of listing, everything turns gray */
   .reccomendations {
     height: 450px;
     width: 100%;
@@ -1196,7 +1177,7 @@ margin-bottom: 25px;
     border-width: thin;
     border-top-style: none;
   }
-
+/* reccomendations area adjusted styling */
   #reccomendationstitle {
     color: #2498f4;
     font-size: 36px;
@@ -1204,7 +1185,7 @@ margin-bottom: 25px;
     padding-top: 5px;
     margin-bottom: 25px;
   }
-
+/* reccomendation title adjusted styling */
   .reccomendationlistings {
     height: 10px;
     width: 100%;
@@ -1216,7 +1197,7 @@ margin-bottom: 25px;
     bottom: 30px;
     z-index: 1;
   }
-
+/* reccomendation listing adjusted styling */
   .reccomendationicons{
     background-color: none;
     height: 60%;
@@ -1226,7 +1207,7 @@ margin-bottom: 25px;
     left: 10px;
     z-index: 0;
   }
-
+/* reccomendation icon container adjusted styling */
   .reciconimg {
     height: 50%;
     width: auto;
@@ -1235,7 +1216,7 @@ margin-bottom: 25px;
     margin-top: 28px;
     z-index: 0;
   }
-
+/* icon image adjusted styling */
   .category {
     position: relative;
     font-size: 12px;
@@ -1245,14 +1226,14 @@ margin-bottom: 25px;
     z-index: 0;
     padding-left: 5px;
   }
-
+/* reccomendation category adjusted styling */
   .rectitle {
     font-size: 16px;
     color: #818181;
     z-index: 0;
     padding-left: 5px;
   }
-
+/* reccomendation title adjusted styling */
   .reccomendationlistings:hover {
     color: black;
     text-decoration: none;
@@ -1272,7 +1253,7 @@ margin-bottom: 25px;
     color: black;
     text-decoration: none;
   }
-
+/* on hover listings turn black and white/grayscale */
   .analytics {
     height: 406px;
     width: 100%;
@@ -1283,7 +1264,7 @@ margin-bottom: 25px;
     top: 0px;
     left: 0px;
   }
-
+/* analytics area adjusted styling */
   #analyticstitle {
     color: #2498f4;
     font-size: 36px;
@@ -1291,18 +1272,17 @@ margin-bottom: 25px;
     padding-top: 0px;
     margin-bottom: 5px;
   }
-
+/* analytics title adjusted styling */
   .analyticsheader {
     border: none;
     width: 369px;
     height: 10%;
   }
-
+/* analytics header adjusted styling */
   #activity {
     padding-left: 6%;
   }
-
-  /* Dropdown Button */
+/* activity text adjusted styling */
   .dropbtn {
     position: relative;
     bottom: 40px;
@@ -1316,15 +1296,13 @@ margin-bottom: 25px;
     border: none;
     background-color:  #f1f1f1
   }
-
-  /* The container <div> - needed to position the dropdown content */
+  /* Dropdown Button */
   .dropdown {
     position: relative;
     display: inline-block;
     height:90px;
   }
-
-  /* Dropdown Content (Hidden by Default) */
+  /* The container <div> - needed to position the dropdown content */
   .dropdown-content {
     margin-right: 0px;
     margin-left: 185px;
@@ -1338,8 +1316,7 @@ margin-bottom: 25px;
     height: 90px;
     width: 169px;
   }
-
-  /* Links inside the dropdown */
+  /* Dropdown Content (Hidden by Default) */
   .dropdown-content a {
     color: black;
     padding: 2px 2px;
@@ -1347,12 +1324,11 @@ margin-bottom: 25px;
     display: block;
     height: 30px;
   }
-
-  /* Change color of dropdown links on hover */
+  /* Links inside the dropdown */
   .dropdown-content a:hover {background-color: #ddd;}
-
-  /* Show the dropdown menu on hover */
+  /* Change color of dropdown links on hover */
   .dropdown:hover .dropdown-content {display: block;}
+  /* Show the dropdown menu on hover */
 
 
   .analyticschart{
@@ -1362,7 +1338,7 @@ margin-bottom: 25px;
     margin-left: 5%;
     margin-right: 5%;
   }
-
+/* chart container adjusted styling */
   #bargraph {
     margin-left: 10%;
     margin-right: 10%;
@@ -1371,7 +1347,7 @@ margin-bottom: 25px;
     height: auto;
     margin-bottom: 5%;
   }
-
+/* chart image adjusted styling */
   .analyticspies {
     padding-top: 0%;
     color: #999999;
@@ -1382,26 +1358,26 @@ margin-bottom: 25px;
     position: relative;
     bottom: 0px;
   }
-
+/* pie chart container adjusted styling */
   #channelpie {
     margin-bottom: 20px;
     position: relative;
     left: 100px;
     bottom: 24px;
   }
-
+/* channel pie chart text adjusted styling */
   .channels {
     width: 80px;
     margin-bottom: 0px;
     margin-left: 20px;
   }
-
+/* channel pie chart adjusted styling */
   #referralspie {
     position: relative;
     left: 270px;
     bottom: 149px;
   }
-
+/* referrals pie chart text adjusted styling */
   .referrals {
     width: 80px;
     margin: 0px;
@@ -1409,7 +1385,7 @@ margin-bottom: 25px;
     left: 190px;
     bottom: 125px;
   }
-
+/* referrals pie chart adjusted styling */
   .analyticsbuttons{
     width: 90%;
     margin-left: 5%;
@@ -1418,7 +1394,7 @@ margin-bottom: 25px;
     bottom: 175px;
     left: 0;
   }
-
+/* analytics buttons container adjusted styling */
   .facebook{
     color: white;
     background-color: #114570;
@@ -1431,7 +1407,7 @@ margin-bottom: 25px;
     bottom: 22px;
     left: 4%;
   }
-
+/* adjusted styling for colored title div next to respective checkbox */
   .fbutton{
     position: relative;
     left: 0%;
@@ -1449,13 +1425,14 @@ margin-bottom: 25px;
     bottom: 63px;
     left: 29%;
   }
+  /* adjusted styling for colored title div next to respective checkbox */
 
   .tbutton {
     position: relative;
     bottom: 41px;
     left: 25%;
   }
-
+/* adjusted styling for checkbox */
   .foursquare{
     color: white;
     background-color: #3a599b;
@@ -1469,12 +1446,14 @@ margin-bottom: 25px;
     bottom: 104px;
     left: 49%;
   }
+  /* adjusted styling for colored title div next to respective checkbox */
 
   .fourbutton{
     position: relative;
     left: 45%;
     bottom: 81px;
   }
+  /* adjusted styling for checkbox */
 
   .google {
     color: white;
@@ -1489,15 +1468,14 @@ margin-bottom: 25px;
     bottom: 145px;
     left: 77%;
   }
+  /* adjusted styling for colored title div next to respective checkbox */
 
   .gbutton{
     position: relative;
     left: 73%;
     bottom: 123px;
   }
-
-
-
+  /* adjusted styling for checkbox */
   .contactscustomers{
     height: 420px;
     width: 100%;
@@ -1510,17 +1488,17 @@ margin-bottom: 25px;
     bottom: 0px;
     left: 0%;
   }
-
+/* adjusted styling for contacts/customers container */
   .contacts {
     width: 50%;
     margin-left: 25%;
   }
-
+/* adjusted styling for contacts image */
   .customers {
     width: 50%;
     margin-left: 25%;;
   }
-
+/* adjusted styling for customers image */
   .didyouknow {
     height: 150px;
     width: 100%;
@@ -1532,7 +1510,7 @@ margin-bottom: 25px;
     bottom: 0px;
     left: 0px;
   }
-
+/* adjusted styling for did you know container */
   .didyouknowbox {
     height: 90%;
     width: 90%;
@@ -1541,7 +1519,7 @@ margin-bottom: 25px;
     margin-top: 5%;
     border-radius: 5px;
   }
-
+/* adjusted styling for did you know banner */
   .didyouknowtext {
     color: white;
     font-size: 12px;
@@ -1551,7 +1529,7 @@ margin-bottom: 25px;
     position: relative;
     bottom: 45%;
   }
-
+/* adjusted styling for did you know text */
   .back {
     background-color: transparent;
     border: none;
@@ -1560,11 +1538,12 @@ margin-bottom: 25px;
     top: 43px;
     z-index: 1;
   }
-
+/* adjusted styling for nav button */
   .back:hover {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
   }
+  /* button applies grayscale filter on hover */
   .next {
     background-color: transparent;
     border: none;
@@ -1573,16 +1552,18 @@ margin-bottom: 25px;
     left: 93%;
     z-index: 1;
   }
+  /* adjusted styling for nav button */
 
   .next:hover {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
   }
+  /* button applies grayscale filter on hover */
 
   .carousel{
     height: 600px;
   }
-
+/* carousel container adjusted styling */
   .carouselbox{
     background-color: #2498f4;
     margin: 0px;
@@ -1594,7 +1575,7 @@ margin-bottom: 25px;
     box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.44);
     flex-direction: column;
   }
-
+/* carousel adjusted into vertical spread */
   .wwys {
     width: 70%;
     height: auto;
@@ -1602,7 +1583,7 @@ margin-bottom: 25px;
     margin-left: 15%;
     margin-right: 15%;
   }
-
+/* ad 1 adjusted styling */
   .swoa {
     width: 70%;
     margin-left: 15%;
@@ -1610,29 +1591,30 @@ margin-bottom: 25px;
     margin-top: 0%;
     margin-bottom: 0%;
   }
-
+/* ad 2 adjusted stying */
   .v2ic {
     margin-left: 15%;
     width: 70%;
     margin-right: 15%;
     margin-bottom: 15%;
   }
-
-  .footer {
-    width: 100%
-    height: 35px;
-    position: relative;
-    bottom: 0px;
-  }
+/* ad 3 adjusted styling */
 
   .wwys:hover, .swoa:hover, .v2ic:hover {
     cursor: pointer;
   }
-
+/* hover changes cursor appearance */
+  .footer {
+    width: 100%;
+    height: 35px;
+    position: relative;
+    bottom: 0px;
+  }
+/* footer container adjusted styling */
   #ArielWinter, #tutorials, #blog, #support {
     display: none;
   }
-
+/* hide links not necessary for mobile version */
   #more {
     display: inherit;
     color: #999999;
@@ -1642,11 +1624,11 @@ margin-bottom: 25px;
     padding-right: 15px;
     margin-bottom: 0px;
   }
-
+/* styling for more link position, color, and size */
   #more:hover {
     text-decoration: underline;
   }
-
+/* on hover, link underlines */
   #notifications {
     display: inherit;
     padding-top: 9px;
@@ -1659,7 +1641,7 @@ margin-bottom: 25px;
     height: 35px;
     margin-bottom: 0px;
   }
-
+/* styling for notifications position, size, color, and border */
   #avatar{
     margin-right: 5px;
     padding-left: 15px;
@@ -1671,5 +1653,5 @@ margin-bottom: 25px;
     height: 35px;
     width: 34px;
   }
-
+/* adjusted styling for avatar */
 }
